@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333; /* Aanpassen aan jouw kleurschema */
+    padding: 1rem; /* Ruimte rond de header */
+    text-align: right; /* Uitlijnen naar rechts */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Horizontale plaatsing */
+    margin-left: 20px; /* Ruimte tussen de navigatie-items, aanpassen indien nodig */
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Aanpassen aan jouw kleurschema */
+    font-size: 2rem; /* Grootte van het lettertype */
+}
+
+main {
+    padding: 20px; /* Ruimte rond de inhoud */
+}
+
+img {
+    width: 2rem; /* Grootte van de afbeelding */
+    height: 2rem; /* In hoogte aanpassen als de afbeelding niet vierkant is */
+}
