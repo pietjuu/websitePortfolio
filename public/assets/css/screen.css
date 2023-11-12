@@ -2,16 +2,24 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #222; /* Iets lichtere achtergrondkleur voor de hele pagina */
+    color: #fff; /* Witte tekstkleur voor contrast */
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     padding: 1rem;
+    background-color: #111; /* Donkere achtergrondkleur voor de navigatie */
+    margin-bottom: 7rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%; /* Neem de volledige breedte in beslag */
 }
 
 nav ul {
@@ -23,17 +31,18 @@ nav ul {
 }
 
 nav li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #fff; /* Witte tekstkleur voor contrast */
     font-size: 2rem;
 }
 
 nav img {
-    max-width: 2rem;
+    max-width: 3rem;
+    max-height: 3rem;
     height: auto;
     margin-left: 1rem;
 }
@@ -44,28 +53,31 @@ h1 {
 }
 
 main {
+    background-color: #222; /* Iets lichtere achtergrondkleur voor de hoofdinhoud */
     padding: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-#Intro {
+#CurrentPage {
     text-align: center;
     margin: 0 auto;
 }
 
-#Intro p {
-    max-width: 25rem;
-    margin: 0 auto;
-    font-size: 1rem;
-    padding-top: 0.3rem;
-}
-
-#Intro p:first-child {
+#CurrentPage p {
+    max-width: 70rem;
+    margin: 0 auto;  /* Behoud de marge aan de zijkanten */
     font-size: 2rem;
+    padding-top: 0;  /* Aangepast naar 0 om de ruimte bovenaan te minimaliseren */
 }
 
-#Intro p:last-child {
+
+#CurrentPage p:first-child {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+
+#CurrentPage p:last-child {
     margin-bottom: 1rem;
 }
 
@@ -81,7 +93,7 @@ main {
 }
 
 .icon-container img {
-    max-width: 0.7rem; /* Maak de iconen kleiner dan de tekst erboven */
+    max-width: 0.7rem;
     height: auto;
     margin-right: 0.3rem;
     padding-top: 0.7rem;
@@ -89,10 +101,10 @@ main {
 
 .icon-container a {
     padding-top: 0.7rem;
-    font-size: 0.7rem; /* Maak de tekst naast de iconen kleiner */
+    font-size: 0.7rem;
 }
 
-#Intro ul {
+#CurrentPage ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -100,6 +112,6 @@ main {
     align-items: center;
 }
 
-#Intro li {
+#CurrentPage li {
     margin-right: 1rem;
 }
