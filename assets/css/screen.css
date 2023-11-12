@@ -24,7 +24,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 20px;
+    margin-left: 1rem;
 }
 
 nav a {
@@ -34,10 +34,11 @@ nav a {
 }
 
 main {
-    padding: 20px;
+    padding: 1rem;
 }
 
 img {
     width: 2rem;
     height: 2rem;
+    margin-left: 1rem;
 }
