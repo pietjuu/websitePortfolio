@@ -5,33 +5,39 @@ body {
 }
 
 header {
-    background-color: #333; /* Aanpassen aan jouw kleurschema */
-    padding: 1rem; /* Ruimte rond de header */
-    text-align: right; /* Uitlijnen naar rechts */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav li {
-    display: inline-block; /* Horizontale plaatsing */
-    margin-left: 20px; /* Ruimte tussen de navigatie-items, aanpassen indien nodig */
+    margin-left: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: white; /* Aanpassen aan jouw kleurschema */
-    font-size: 2rem; /* Grootte van het lettertype */
+    color: black;
+    font-size: 2rem;
 }
 
 main {
-    padding: 20px; /* Ruimte rond de inhoud */
+    padding: 20px;
 }
 
 img {
-    width: 2rem; /* Grootte van de afbeelding */
-    height: 2rem; /* In hoogte aanpassen als de afbeelding niet vierkant is */
+    width: 2rem;
+    height: 2rem;
 }
