@@ -57,7 +57,8 @@ main {
 #Intro p {
     max-width: 25rem;
     margin: 0 auto;
-    font-size: 1.5rem; /* Maak de tekst kleiner dan de h1 */
+    font-size: 1rem;
+    padding-top: 0.3rem;
 }
 
 #Intro p:first-child {
@@ -80,13 +81,15 @@ main {
 }
 
 .icon-container img {
-    max-width: 2rem;
+    max-width: 0.7rem; /* Maak de iconen kleiner dan de tekst erboven */
     height: auto;
-    margin-right: 1rem;
+    margin-right: 0.3rem;
+    padding-top: 0.7rem;
 }
 
 .icon-container a {
-    font-size: 1.5rem; /* Maak de tekst kleiner dan de h1 */
+    padding-top: 0.7rem;
+    font-size: 0.7rem; /* Maak de tekst naast de iconen kleiner */
 }
 
 #Intro ul {
