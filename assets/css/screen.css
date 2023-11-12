@@ -35,10 +35,37 @@ nav a {
 
 main {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#Intro {
+    text-align: center;
+    margin: 0 auto; /* Centreren van #Intro in main */
+}
+
+#Intro p {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+#Intro p:first-child {
+    font-size: 2rem;
 }
 
 img {
     width: 2rem;
     height: 2rem;
     margin-left: 1rem;
+}
+
+#Intro ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+#Intro li {
+    margin-right: 1rem;
 }
