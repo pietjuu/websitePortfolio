@@ -117,6 +117,11 @@ main {
     color: #e0e0e0;
 }
 
+/* Icon container styles with hover effect */
+.icon-container:hover a {
+    color: #5588a3; /* Slightly darker light blue hover color */
+}
+
 #CurrentPage ul {
     display: flex;
     list-style: none;
