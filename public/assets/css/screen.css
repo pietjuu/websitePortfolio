@@ -2,15 +2,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #222; /* Iets lichtere achtergrondkleur voor de hele pagina */
-    color: #fff; /* Witte tekstkleur voor contrast */
+    background-color: #222;
+    color: #fff;
     display: flex;
     flex-direction: column;
 }
 
 header {
     padding: 1rem;
-    background-color: #111; /* Donkere achtergrondkleur voor de navigatie */
+    background-color: #111;
     margin-bottom: 7rem;
 }
 
@@ -18,8 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    width: 100%; /* Neem de volledige breedte in beslag */
+    width: 100%;
 }
 
 nav ul {
@@ -36,7 +35,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Witte tekstkleur voor contrast */
+    color: #fff;
     font-size: 2rem;
 }
 
@@ -53,24 +52,26 @@ h1 {
 }
 
 main {
-    background-color: #222; /* Iets lichtere achtergrondkleur voor de hoofdinhoud */
+    background-color: #222;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    width: 70rem;
+    margin: 0 auto;
 }
 
 #CurrentPage {
     text-align: center;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 #CurrentPage p {
     max-width: 70rem;
-    margin: 0 auto;  /* Behoud de marge aan de zijkanten */
+    margin: 0 auto;
     font-size: 2rem;
-    padding-top: 0;  /* Aangepast naar 0 om de ruimte bovenaan te minimaliseren */
+    padding-top: 0;
 }
-
 
 #CurrentPage p:first-child {
     font-size: 5rem;
@@ -114,4 +115,46 @@ main {
 
 #CurrentPage li {
     margin-right: 1rem;
+}
+
+.rectangles-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.big-rectangle,
+.side-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+.big-rectangle {
+    background-color: #777;
+    height: 13.5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    width: 50%; /* Set width for both rectangles */
+}
+
+.small-rectangles {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Set width for both rectangles */
+}
+
+.side-rectangle {
+    background-color: #555;
+    height: 6.25rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text {
+    padding: 1rem;
 }
