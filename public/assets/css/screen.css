@@ -123,16 +123,13 @@ main {
     margin-right: 1rem;
 }
 
-/* Project section styles with updated color palette and hover effect */
-
 section {
     margin-top: 2rem;
-    text-align: center; /* Add this to center-align the content */
-
+    text-align: center;
 }
 
 section h2 {
-    margin-bottom: 2rem; /* Adjust the margin as needed */
+    margin-bottom: 2rem;
     font-size: 5rem;
 }
 
@@ -228,4 +225,28 @@ footer img {
     left: 0;
 }
 
+.typing-text {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    position: relative;
+    display: inline-block;
+}
 
+.cursor {
+    display: inline-block;
+    width: 0.3em;
+    height: 1.5em;
+    background-color: #e0e0e0;
+    vertical-align: text-bottom;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
