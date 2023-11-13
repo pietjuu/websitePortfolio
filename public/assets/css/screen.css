@@ -137,8 +137,8 @@ section {
 
 .rectangles-container {
     display: flex;
-    align-items: flex-start;
-    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem; /* Aangepaste marge tussen de rechthoeken en de vorige sectie */
 }
 
 .big-rectangle,
@@ -183,4 +183,31 @@ section {
 
 .text {
     padding: 1rem;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-rectangle {
+    background-color: #004466; /* Dark blue */
+    height: 6.25rem;
+    border-radius: 1rem;
+    flex-basis: calc(33.33% - 0.67rem); /* 33.33% breedte met aangepaste afstand */
+    margin-bottom: 1rem; /* Aangepaste afstand tussen de rijen */
+    margin-right: 0.67rem; /* Aangepaste marge tussen de rechthoeken */
+    margin-top: 0.67rem; /* Aangepaste margin-top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.grid-rectangle:hover {
+    transform: scale(1.05);
 }
