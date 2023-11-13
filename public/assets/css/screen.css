@@ -1,24 +1,18 @@
-/* Reset and default styles */
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1c1f2a; /* Dark blue background */
-    color: #e0e0e0; /* Light grey text color */
+    background-color: #1c1f2a;
+    color: #e0e0e0;
     display: flex;
     flex-direction: column;
 }
 
-/* Header styles */
-
 header {
     padding: 1rem;
-    background-color: #004466; /* Dark blue header background */
-    margin-bottom: 2rem; /* Reduced the margin for a more compact header */
+    background-color: #004466;
+    margin-bottom: 2rem;
 }
-
-/* Navigation styles */
 
 nav {
     display: flex;
@@ -47,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #5588a3; /* Slightly darker light blue hover color */
+    color: #5588a3;
 }
 
 nav img {
@@ -57,18 +51,14 @@ nav img {
     margin-left: 1rem;
 }
 
-/* Main content styles */
-
 main {
-    background-color: #1c1f2a; /* Dark blue content background */
+    background-color: #1c1f2a;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     width: 70rem;
     margin: 0 auto;
 }
-
-/* CurrentPage styles */
 
 #CurrentPage {
     text-align: center;
@@ -117,9 +107,8 @@ main {
     color: #e0e0e0;
 }
 
-/* Icon container styles with hover effect */
 .icon-container:hover a {
-    color: #5588a3; /* Slightly darker light blue hover color */
+    color: #5588a3;
 }
 
 #CurrentPage ul {
@@ -138,12 +127,19 @@ main {
 
 section {
     margin-top: 2rem;
+    text-align: center; /* Add this to center-align the content */
+
+}
+
+section h2 {
+    margin-bottom: 2rem; /* Adjust the margin as needed */
+    font-size: 5rem;
 }
 
 .rectangles-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem; /* Aangepaste marge tussen de rechthoeken en de vorige sectie */
+    margin-top: 1rem;
 }
 
 .big-rectangle,
@@ -158,8 +154,8 @@ section {
 }
 
 .big-rectangle {
-    background-color: #004466; /* Dark blue */
-    height: 13.5rem;
+    background-color: #004466;
+    height: 17rem;
     border-radius: 1rem;
     margin-right: 1rem;
     width: 50%;
@@ -176,8 +172,8 @@ section {
 }
 
 .side-rectangle {
-    background-color: #004466; /* Slightly darker light blue */
-    height: 6.25rem;
+    background-color: #004466;
+    height: 8rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
@@ -197,13 +193,13 @@ section {
 }
 
 .grid-rectangle {
-    background-color: #004466; /* Dark blue */
-    height: 6.25rem;
+    background-color: #004466;
+    height: 8rem;
     border-radius: 1rem;
-    flex-basis: calc(33.33% - 0.67rem); /* 33.33% breedte met aangepaste afstand */
-    margin-bottom: 1rem; /* Aangepaste afstand tussen de rijen */
-    margin-right: 0.67rem; /* Aangepaste marge tussen de rechthoeken */
-    margin-top: 0.67rem; /* Aangepaste margin-top */
+    flex-basis: calc(33.33% - 0.67rem);
+    margin-bottom: 1rem;
+    margin-right: 0.67rem;
+    margin-top: 0.67rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,3 +212,20 @@ section {
 .grid-rectangle:hover {
     transform: scale(1.05);
 }
+
+footer {
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+footer img {
+    width: 100%;
+    height: 4rem;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
