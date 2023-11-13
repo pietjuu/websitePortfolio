@@ -1,18 +1,24 @@
+/* Reset and default styles */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
+    background-color: #1c1f2a; /* Dark blue background */
+    color: #e0e0e0; /* Light grey text color */
     display: flex;
     flex-direction: column;
 }
 
+/* Header styles */
+
 header {
     padding: 1rem;
-    background-color: #111;
-    margin-bottom: 7rem;
+    background-color: #004466; /* Dark blue header background */
+    margin-bottom: 2rem; /* Reduced the margin for a more compact header */
 }
+
+/* Navigation styles */
 
 nav {
     display: flex;
@@ -35,8 +41,13 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #5588a3; /* Slightly darker light blue hover color */
 }
 
 nav img {
@@ -46,19 +57,18 @@ nav img {
     margin-left: 1rem;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2rem;
-}
+/* Main content styles */
 
 main {
-    background-color: #222;
+    background-color: #1c1f2a; /* Dark blue content background */
     padding: 1rem;
     display: flex;
     flex-direction: column;
     width: 70rem;
     margin: 0 auto;
 }
+
+/* CurrentPage styles */
 
 #CurrentPage {
     text-align: center;
@@ -94,7 +104,7 @@ main {
 }
 
 .icon-container img {
-    max-width: 0.7rem;
+    max-width: 1rem;
     height: auto;
     margin-right: 0.3rem;
     padding-top: 0.7rem;
@@ -102,7 +112,9 @@ main {
 
 .icon-container a {
     padding-top: 0.7rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #e0e0e0;
 }
 
 #CurrentPage ul {
@@ -117,6 +129,12 @@ main {
     margin-right: 1rem;
 }
 
+/* Project section styles with updated color palette and hover effect */
+
+section {
+    margin-top: 2rem;
+}
+
 .rectangles-container {
     display: flex;
     align-items: flex-start;
@@ -129,30 +147,38 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
-
-    box-sizing: border-box; /* Include padding and border in the total width */
+    color: #e0e0e0;
+    box-sizing: border-box;
+    transition: transform 0.3s;
 }
 
 .big-rectangle {
-    background-color: #777;
+    background-color: #004466; /* Dark blue */
     height: 13.5rem;
     border-radius: 1rem;
     margin-right: 1rem;
-    width: 50%; /* Set width for both rectangles */
+    width: 50%;
+}
+
+.big-rectangle:hover {
+    transform: scale(1.05);
 }
 
 .small-rectangles {
     display: flex;
     flex-direction: column;
-    width: 50%; /* Set width for both rectangles */
+    width: 50%;
 }
 
 .side-rectangle {
-    background-color: #555;
+    background-color: #004466; /* Slightly darker light blue */
     height: 6.25rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
+}
+
+.side-rectangle:hover {
+    transform: scale(1.05);
 }
 
 .text {
