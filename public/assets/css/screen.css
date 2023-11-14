@@ -66,8 +66,8 @@ main {
 }
 
 .profile-picture {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
@@ -76,13 +76,6 @@ main {
 
 .text-container {
     text-align: center;
-}
-
-#CurrentPage p {
-    max-width: 70rem;
-    margin: 0 auto;
-    font-size: 2rem;
-    padding-top: 0;
 }
 
 #CurrentPage p {
@@ -170,16 +163,37 @@ section h2 {
 }
 
 .big-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    transition: transform 0.3s;
     background-color: #004466;
     height: 17rem;
     border-radius: 1rem;
     margin-right: 1rem;
     width: 50%;
+    overflow: hidden;
+}
+
+.big-rectangle img {
+    max-height: 100%;
+    max-width: 50%;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.big-rectangle .text {
+    padding: 1rem;
+    max-width: 45%;
 }
 
 .big-rectangle:hover {
     transform: scale(1.05);
 }
+
 
 .small-rectangles {
     display: flex;
