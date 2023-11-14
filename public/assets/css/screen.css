@@ -252,16 +252,31 @@ section h2 {
     margin-top: 0.67rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between; /* Nieuwe regel */
+    text-align: left; /* Nieuwe regel */
     color: #e0e0e0;
     box-sizing: border-box;
     transition: transform 0.3s;
+    overflow: hidden; /* Nieuwe regel */
+}
+
+.grid-rectangle img {
+    width: 50%; /* 50% breedte van de container */
+    height: 75%; /* 100% hoogte van de container */
+    object-fit: cover; /* Behoud de verhoudingen van de afbeeldingen */
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.grid-rectangle .text {
+    padding: 1rem;
+    max-width: 45%; /* Aanpassen naar wens */
 }
 
 .grid-rectangle:hover {
     transform: scale(1.05);
 }
+
 
 footer {
     padding: 0;
