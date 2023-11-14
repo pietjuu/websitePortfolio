@@ -234,7 +234,7 @@ section h2 {
 }
 
 .side-rectangle img {
-    width: 25%;
+    width: 50%;
     height: 75%;
     object-fit: cover;
     border-radius: 1rem;
@@ -314,6 +314,7 @@ section h2 {
 .grid-rectangle .text {
     padding: 1rem;
     max-width: 45%;
+    margin-left: 3rem;
 }
 
 
