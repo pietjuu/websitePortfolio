@@ -186,12 +186,41 @@ section h2 {
 }
 
 .big-rectangle .text {
-    padding: 1rem;
-    max-width: 45%;
+    position: relative;
 }
 
-.big-rectangle:hover {
-    transform: scale(1.05);
+.big-rectangle .text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.big-rectangle .text p {
+    margin-bottom: 1rem;
+}
+
+.big-rectangle .text .links {
+    position: absolute;
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Gewijzigd van 'column' naar 'row' */
+    justify-content: flex-start; /* Uitlijning naar links */
+}
+
+.big-rectangle .text .links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1rem;
+    margin-right: 1rem; /* Ruimte toegevoegd tussen de links */
+    transition: color 0.3s;
+}
+
+.big-rectangle .text .links a:last-child {
+    margin-right: 0; /* Verwijder de marge aan de rechterkant voor het laatste element */
+}
+
+.big-rectangle .text .links a:hover {
+    color: #5588a3;
 }
 
 
@@ -252,26 +281,27 @@ section h2 {
     margin-top: 0.67rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Nieuwe regel */
-    text-align: left; /* Nieuwe regel */
+    justify-content: space-between;
+    text-align: left;
     color: #e0e0e0;
     box-sizing: border-box;
     transition: transform 0.3s;
-    overflow: hidden; /* Nieuwe regel */
+    overflow: hidden;
 }
 
 .grid-rectangle img {
-    width: 50%; /* 50% breedte van de container */
-    height: 75%; /* 100% hoogte van de container */
-    object-fit: cover; /* Behoud de verhoudingen van de afbeeldingen */
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
     border-radius: 1rem;
     margin-right: 1rem;
 }
 
 .grid-rectangle .text {
     padding: 1rem;
-    max-width: 45%; /* Aanpassen naar wens */
+    max-width: 45%;
 }
+
 
 .grid-rectangle:hover {
     transform: scale(1.05);
@@ -301,20 +331,4 @@ footer img {
     display: inline-block;
 }
 
-.cursor {
-    display: inline-block;
-    width: 0.3em;
-    height: 1.5em;
-    background-color: #e0e0e0;
-    vertical-align: text-bottom;
-    animation: blink 1s infinite;
-}
 
-@keyframes blink {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-}
