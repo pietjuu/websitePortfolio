@@ -204,9 +204,29 @@ section h2 {
 .side-rectangle {
     background-color: #004466;
     height: 8rem;
+    width: 100%;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.side-rectangle img {
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.side-rectangle .text {
+    padding: 1rem;
+    text-align: left;
+    color: #e0e0e0;
+    max-width: 45%;
+}
+
 
 .side-rectangle:hover {
     transform: scale(1.05);
