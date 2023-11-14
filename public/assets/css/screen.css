@@ -176,6 +176,11 @@ section h2 {
     margin-right: 1rem;
     width: 50%;
     overflow: hidden;
+    text-decoration: none;
+}
+
+.big-rectangle a {
+    text-decoration: none;
 }
 
 .big-rectangle img {
@@ -187,42 +192,29 @@ section h2 {
 
 .big-rectangle .text {
     position: relative;
+    text-decoration: none;
 }
 
 .big-rectangle .text h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #e0e0e0;
+    text-decoration: none;
 }
 
 .big-rectangle .text p {
     margin-bottom: 1rem;
-}
-
-.big-rectangle .text .links {
-    position: absolute;
-    padding-top: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row; /* Gewijzigd van 'column' naar 'row' */
-    justify-content: flex-start; /* Uitlijning naar links */
-}
-
-.big-rectangle .text .links a {
-    text-decoration: none;
     color: #e0e0e0;
-    font-size: 1rem;
-    margin-right: 1rem; /* Ruimte toegevoegd tussen de links */
-    transition: color 0.3s;
+    text-decoration: none;
 }
 
-.big-rectangle .text .links a:last-child {
-    margin-right: 0; /* Verwijder de marge aan de rechterkant voor het laatste element */
+.big-rectangle:hover {
+    transform: scale(1.05);
 }
 
-.big-rectangle .text .links a:hover {
+.big-rectangle .text h3:hover {
     color: #5588a3;
 }
-
 
 .small-rectangles {
     display: flex;
@@ -242,23 +234,45 @@ section h2 {
 }
 
 .side-rectangle img {
-    width: 50%;
+    width: 25%;
     height: 75%;
     object-fit: cover;
     border-radius: 1rem;
     margin-right: 1rem;
 }
 
-.side-rectangle .text {
+.side-rectangle .text a {
+    text-decoration: none;
     padding: 1rem;
     text-align: left;
     color: #e0e0e0;
     max-width: 45%;
+    position: relative;
+
+}
+
+.side-rectangle .text h3 {
+    width: 120%;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0;
+    text-decoration: none;
+
+}
+
+.side-rectangle .text p {
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+    text-decoration: none;
 }
 
 
 .side-rectangle:hover {
     transform: scale(1.05);
+}
+
+.side-rectangle .text h3:hover {
+    color: #5588a3;
 }
 
 .text {
@@ -305,6 +319,16 @@ section h2 {
 
 .grid-rectangle:hover {
     transform: scale(1.05);
+}
+
+.grid-rectangle a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+.grid-rectangle a:hover {
+    color: #5588a3;
 }
 
 
