@@ -5,7 +5,8 @@
 <title>Honeypot project</title>
 
 <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
-<link rel="stylesheet" href="assets/css/screen.css" type="text/css"/>
+<link rel="stylesheet" href="assets/css/autoclicker.css" type="text/css"/>
+
 <body>
 <header>
 
@@ -24,8 +25,85 @@
 </header>
 
 <main>
-    <section>
+    <section class="section-container">
+        <h2>Honeypot project</h2>
+        <div class="content-container">
+            <div class="text-container">
+                <p>
+                    This project was a pivotal component of my Web Technology, Security, and Honeypot course, guided by
+                    Mr. Koreman, who provided comprehensive insights into web security, effective monitoring with an ELK
+                    stack, and the streamlined setup of environments using Ansible. <br> <br>
 
+                    In groups of three, our task was to develop a website featuring a Capture The Flag (CTF) challenge.
+                    The website hosted five challenges, and participants were encouraged to attempt to solve them, even
+                    with the permission to deliberately break the application. As developers, our responsibility
+                    extended to ensuring the website's security, actively preventing any attempts at hacking. <br> <br>
+
+                    The website, designed with a standard layout, presented five doors, each representing a unique
+                    challenge. The challenges included exploiting a PHP vulnerability to log in as an admin without
+                    knowing the password, leveraging this vulnerability to achieve Server-Side Request Forgery (SSRF),
+                    uploading an image to trigger Cross-Site Scripting (XXS), bypassing the "not allowed" page, and
+                    discovering a hidden page. Mats Fiers took charge of programming the PHP part, while I established
+                    the database on the server. <br> <br>
+
+                    Following the website's creation, I developed Ansible scripts, accessible <a
+                        href="https://github.com/pietjuu/Honeypot/tree/main/ansible-main/ansible-main"
+                        target="_blank">here</a>, to automate
+                    the setup process. Ansible, an open-source suite, facilitates infrastructure-as-code through
+                    software provisioning, configuration management, and application deployment. <br> <br>
+
+                    Subsequently, I set up the ELK stack and crafted a dashboard. The ELK stack, an acronym for
+                    Elasticsearch, Logstash, and Kibana, played a crucial role in automatically gathering logs on our
+                    ELK server and creating a comprehensive dashboard for monitoring. For more information about the ELK
+                    stack, you can refer <a
+                        href="https://www.elastic.co/guide/index.html"
+                        target="_blank">here</a> <br> <br>
+
+
+                    For a more detailed explanation, you can refer to the README.md <a
+                        href="https://github.com/pietjuu/Honeypot"
+                        target="_blank">here</a>.
+
+                    You can view the code on my <a href="https://github.com/pietjuu/Honeypot" target="_blank"
+                                                   class="github-button">GitHub</a>.
+                    <br> <br>
+                    The libraries and techniques that I learned can be found in the rectangle below. For more
+                    information about the
+                    libraries, you can just click on the icon.
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/what-is-a-honeypot-cyber-security.png" alt="honeypot">
+            </div>
+            <div class="rectangle-container">
+                <div class="icon-group">
+                    <div class="icon-container">
+                        <a href="https://www.imperva.com/learn/application-security/honeypot-honeynet/" target="_blank">
+                            <img src="images/honeypot-network-security.jpg" alt="honeypot">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.php.net/" target="_blank">
+                            <img src="images/php.png" alt="php">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.ansible.com/" target="_blank">
+                            <img src="images/ansible.png" alt="ansible">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.elastic.co/elastic-stack" target="_blank">
+                            <img src="images/ELK.png" alt="ELK">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
 
