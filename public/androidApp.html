@@ -5,7 +5,8 @@
 <title>Android App</title>
 
 <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
-<link rel="stylesheet" href="assets/css/screen.css" type="text/css"/>
+<link rel="stylesheet" href="assets/css/autoclicker.css" type="text/css"/>
+<link rel="stylesheet" href="assets/css/androidPicture.css" type="text/css"/>
 <body>
 <header>
 
@@ -24,8 +25,90 @@
 </header>
 
 <main>
-    <section>
+    <section class="section-container">
+        <h2>Android App</h2>
+        <div class="content-container">
+            <div class="text-container">
+                <p>
+                    This project was part of my Mobile Security course, where Mr. Koreman provided valuable insights
+                    into mobile app vulnerabilities and tools for reverse engineering. Our task was to develop an
+                    Android app using the Kotlin programming language, a cross-platform, statically typed language with
+                    general-purpose high-level capabilities and type inference, closely resembling Java. More
+                    information about Kotlin can be found <a
+                        href="https://kotlinlang.org/"
+                        target="_blank">here</a>. <br> <br>
 
+                    For the project, we were required to create an Android app in Kotlin, incorporating at least one API
+                    call to a service of our choice and utilizing a database. After completing the app, we had to
+                    introduce a form of malware and create a Frida script capable of bypassing a specific function
+                    within our application. <br> <br>
+
+                    In my app, the user logs in, and upon successful authentication, they can click the "Get random
+                    Pokémon" button. After a brief delay, an API call is made to the Pokemontcg API, displaying a random
+                    Pokémon card on the screen. I opted for SQLite3 as the database engine since it is pre-installed on
+                    every Android device. Information about the Pokemontcg API can be found <a
+                        href="https://pokemontcg.io/"
+                        target="_blank">here</a>. Information about SQLite3 can be found <a
+                        href="https://www.sqlite.org/docs.html"
+                        target="_blank">here</a> <br> <br>
+
+                    To introduce malware, I implemented a feature: when the user clicks the Pokémon card button, all
+                    device information is sent to my Google Firebase database. To accomplish this, I rooted my phone to
+                    obtain the necessary permissions. <br> <br>
+
+                    The Frida script I developed bypasses the login screen by setting the authentication function to
+                    true. This enables login without requiring a username or password. You can find the script <a
+                        href="https://github.com/pietjuu/pokemonApp/blob/main/app/frida.js"
+                        target="_blank">here</a>. For real-world implementation,
+                    the APK should be opened with the apktool, and after integrating the Frida server, it should be
+                    rebuilt. More information about that can be found <a
+                        href="https://koz.io/using-frida-on-android-without-root/"
+                        target="_blank">here</a><br> <br>
+
+                    For a more detailed explanation, you can refer to the README.md <a
+                        href="https://github.com/pietjuu/pokemonApp"
+                        target="_blank">here</a>.
+
+                    You can view the code on my <a href="https://github.com/pietjuu/pokemonApp" target="_blank"
+                                                   class="github-button">GitHub</a>.
+                    <br> <br>
+                    The libraries and techniques that I learned can be found in the rectangle below. For more
+                    information about the
+                    libraries, you can just click on the icon.
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="image-container-android">
+                <img src="images/mobileApp.jpg" alt="humanbenchmark">
+            </div>
+            <div class="rectangle-container">
+                <div class="icon-group">
+                    <div class="icon-container">
+                        <a href="https://kotlinlang.org/docs/home.html" target="_blank">
+                            <img src="images/kotlin.png" alt="kotlin">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://www.sqlite.org/docs.html" target="_blank">
+                            <img src="images/sqllite.jpg" alt="sqllite">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://frida.re/docs/home/" target="_blank">
+                            <img src="images/frida.png" alt="frida">
+                        </a>
+                    </div>
+                    <div class="icon-container">
+                        <a href="https://firebase.google.com/docs" target="_blank">
+                            <img src="images/googlefirebase.png" alt="google firebase">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
 
