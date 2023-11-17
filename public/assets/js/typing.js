@@ -15,16 +15,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 textElement.textContent = currentText;
                 letterIndex++;
                 setTimeout(type, 100);
-            } else {
-                // Do nothing here, let the function proceed to the next text or finish
             }
-        } else {
-            // Typing is complete, set cursor visibility and animation
-            cursorElement.style.visibility = 'visible';
-            cursorElement.style.animation = 'blink 1s infinite';
         }
     }
-
-    // Start de typende animatie
     type();
 });
