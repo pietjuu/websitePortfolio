@@ -79,6 +79,15 @@ main {
     text-align: center;
 }
 
+.text-container a{
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.text-container:hover a{
+    color: #5588a3;
+}
+
 #CurrentPage p {
     max-width: 70rem;
     margin: 0 auto;
