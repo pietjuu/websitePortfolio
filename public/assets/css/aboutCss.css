@@ -8,7 +8,6 @@ body {
     flex-direction: column;
 }
 
-
 header {
     padding: 1rem;
     background-color: #004466;
@@ -52,44 +51,32 @@ nav img {
     margin-left: 1rem;
 }
 
-main {
-    background-color: #1c1f2a;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 70rem;
-    margin: 0 auto;
-}
-
 section#Intro {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 40px;
     text-align: center;
+    padding: 1rem; /* Adjust padding as needed */
 }
 
 section#Intro .content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Wrap the content if space is insufficient */
-    margin-top: 20px;
+    align-items: flex-start;
+    max-width: 60rem; /* Adjust as needed */
 }
 
-section#Intro h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+section#Intro .vertical-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem; /* Adjust spacing between text and image */
 }
 
-section#Intro p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    max-width: 300px;
+section#Intro .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
-section#Intro img {
-    max-width: 20%;
-    height: auto;
-    margin-left: 5rem; /* Adjust spacing between text and image */
+section#Intro .image img {
+    height: 20rem;
+    margin-left: 5rem;
 }
