@@ -50,6 +50,14 @@ nav img {
     height: auto;
     margin-left: 1rem;
 }
+main {
+    background-color: #1c1f2a;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    margin: 0 auto;
+}
 
 section#Intro {
     display: flex;
@@ -108,3 +116,62 @@ section#Intro .image img {
     height: 20rem;
     margin-left: 5rem;
 }
+
+section#Intro a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+section#Intro a:hover {
+    color: #5588a3;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-rectangle {
+    background-color: #004466;
+    height: 6rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.67rem;
+    margin-top: 0.67rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.grid-rectangle img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.grid-rectangle .text {
+    padding: 1rem;
+    max-width: 45%;
+    margin-left: 3rem;
+}
+
+
+.grid-rectangle:hover {
+    transform: scale(1.05);
+}
+
+.grid-rectangle a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+.grid-rectangle a:hover {
+    color: #5588a3;
+}
+
