@@ -64,19 +64,19 @@ section#Intro {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem; /* Adjust padding as needed */
+    padding: 1rem;
 }
 
 section#Intro .content {
     display: flex;
     align-items: flex-start;
-    max-width: 60rem; /* Adjust as needed */
+    max-width: 60rem;
 }
 
 section#Intro .vertical-content {
     display: flex;
     flex-direction: column;
-    margin-right: 1rem; /* Adjust spacing between text and image */
+    margin-right: 1rem;
 }
 
 section#Intro .title {
@@ -92,7 +92,7 @@ section#Intro .title {
 }
 
 .icon-list li {
-    margin-right: 1.5rem; /* Ruimte tussen de iconen, aanpassen indien nodig */
+    margin-right: 1.5rem;
 }
 
 .icon-container {
@@ -106,9 +106,9 @@ section#Intro .title {
     max-width: 2rem;
     max-height: 2rem;
     height: auto;
-    margin-bottom: 0.5rem; /* Ruimte tussen de tekst en de iconen */
+    margin-bottom: 0.5rem;
     margin-top: 1rem;
-    display: block; /* Voorkomt eventuele extra ruimte rondom de afbeelding */
+    display: block;
 }
 
 
@@ -118,7 +118,7 @@ section#Intro .image img {
 }
 
 section#Intro a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #e0e0e0;
 }
 
