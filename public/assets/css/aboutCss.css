@@ -210,7 +210,8 @@ section#Intro a:hover {
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     border-radius: 5px;
     color: white;
-    padding: 1.75rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
     margin: 1rem;
