@@ -205,7 +205,7 @@ section#Intro a:hover {
 
 .timeline-content {
     padding: 20px;
-    background: #1f1f1f;
+    background: #004466;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     border-radius: 5px;
@@ -231,7 +231,7 @@ section#Intro a:hover {
     }
     .timeline-middle {
         position: relative;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        background-image: linear-gradient(45deg, #003366, #336699, #66ccff);
         width: 3px;
         height: 100%;
     }
@@ -245,7 +245,7 @@ section#Intro a:hover {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        background-image: linear-gradient(45deg, #003366, #336699, #66ccff);
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
@@ -259,10 +259,15 @@ section#Intro a:hover {
     }
     .timeline-middle {
         position: relative;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        background-image: linear-gradient(45deg, #003366, #336699, #66ccff);
         width: 3px;
         height: 100%;
     }
+
+    .timeline-component:hover {
+        transform: scale(1.05);
+    }
+
     .main-middle {
         opacity: 0;
     }
@@ -273,7 +278,7 @@ section#Intro a:hover {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        background-image: linear-gradient(45deg, #003366, #336699, #66ccff);
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
     }
