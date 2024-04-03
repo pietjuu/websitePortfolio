@@ -1,0 +1,346 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1f2a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    padding: 1rem;
+    background-color: #004466;
+    margin-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #5588a3;
+}
+
+nav img {
+    max-width: 3rem;
+    max-height: 3rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+main {
+    background-color: #1c1f2a;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    margin: 0 auto;
+}
+
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.text-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-container:hover a{
+    color: #5588a3;
+}
+
+#CurrentPage p {
+    max-width: 70rem;
+    margin: 0 auto;
+    /*font-size: 2rem;*/
+    padding-top: 0;
+}
+
+#CurrentPage p:first-child {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+
+#CurrentPage p:last-child {
+    margin-bottom: 1rem;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.icon-container img {
+    max-width: 1rem;
+    height: auto;
+    margin-right: 0.3rem;
+    padding-top: 0.7rem;
+}
+
+.icon-container a {
+    padding-top: 0.7rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.icon-container:hover a {
+    color: #5588a3;
+}
+
+#CurrentPage ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#CurrentPage li {
+    margin-right: 1rem;
+}
+
+section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.rectangles-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.big-rectangle,
+.side-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.big-rectangle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    background-color: #004466;
+    height: 17rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    width: 50%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.big-rectangle a {
+    text-decoration: none;
+}
+
+.big-rectangle img {
+    max-height: 100%;
+    max-width: 50%;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.big-rectangle .text {
+    position: relative;
+    text-decoration: none;
+}
+
+.big-rectangle .text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.big-rectangle .text p {
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.big-rectangle:hover {
+    transform: scale(1.05);
+}
+
+.big-rectangle .text h3:hover {
+    color: #5588a3;
+}
+
+.small-rectangles {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.side-rectangle {
+    background-color: #004466;
+    height: 8rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side-rectangle img {
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.side-rectangle .text a {
+    text-decoration: none;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+    max-width: 45%;
+    position: relative;
+
+}
+
+.side-rectangle .text h3 {
+    width: 120%;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.side-rectangle .text p {
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.side-rectangle:hover {
+    transform: scale(1.05);
+}
+
+.side-rectangle .text h3:hover {
+    color: #5588a3;
+}
+
+.text {
+    padding: 1rem;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-rectangle {
+    background-color: #004466;
+    height: 8rem;
+    border-radius: 1rem;
+    flex-basis: calc(33.33% - 0.67rem);
+    margin-bottom: 1rem;
+    margin-right: 0.67rem;
+    margin-top: 0.67rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: black;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.grid-rectangle img {
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.grid-rectangle .text {
+    padding: 1rem;
+    max-width: 45%;
+    margin-left: 3rem;
+}
+
+
+.grid-rectangle:hover {
+    transform: scale(1.05);
+}
+
+.grid-rectangle a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.grid-rectangle a:hover {
+    color: #5588a3;;
+}
