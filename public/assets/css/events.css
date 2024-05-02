@@ -326,10 +326,13 @@ section h2 {
 
 .grid-rectangle .text {
     padding: 1rem;
-    max-width: 45%;
-    margin-left: 3rem;
+    max-width: 100%;
+    margin-left: 1rem;
 }
 
+br {
+    margin-bottom: 0.5rem;
+}
 
 .grid-rectangle:hover {
     transform: scale(1.05);
