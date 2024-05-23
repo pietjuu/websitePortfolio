@@ -5,7 +5,7 @@
 <title>Honeypot project</title>
 
 <link rel="stylesheet" href="assets/css/reset.css" type="text/css"/>
-<link rel="stylesheet" href="assets/css/autoclicker.css" type="text/css"/>
+<link rel="stylesheet" href="assets/css/cssEvents.css" type="text/css"/>
 
 
 <body>
@@ -30,78 +30,182 @@
         <h2>Pycon Sweden day 1</h2>
         <div class="content-container">
             <div class="text-container">
-                <p>
+                <article>
+                    <h3> Insights from the Python Conference 2024 – Day 1</h3>
+                    <div class="imageFlex">
+                        <p>
+                            The recent Python Conference 2024 brought together some of the brightest minds in the Python
+                            community, covering a wide array of topics from the fundamentals of open-source
+                            contributions to
+                            the
+                            intricacies of modern web frameworks. Here’s a recap of the key sessions and takeaways from
+                            this
+                            eventful day.
+                        </p>
+                        <img src="images/pycon.jpg" alt="pycon">
+                    </div>
+                </article>
+                <article>
+                    <h3> Keynote: You Can Do It by Daniel Stenberg </h3>
+                    <div class="imageFlex">
+                        <p>
+                            Daniel Stenberg, the creator of Curl, kicked off the conference with an inspiring keynote.
+                            Despite
+                            not writing Python himself, Stenberg's insights on open source were invaluable:
 
-                    What is Lorem Ipsum?
+                            The Journey of Curl: Stenberg shared how his code, written 27 years ago, now runs on
+                            virtually
+                            every
+                            internet-connected device.
+                            - Open Source Philosophy: He emphasized starting small and being patient. Success in open
+                            source
+                            requires accepting periods of solitary work.
+                            - Security and Maintenance: Own your security problems, adapt, and continuously test.
+                            Emphasize
+                            readable code, documentation, and comprehensive testing to mitigate issues.
+                            - The Future of Open Source: With 25 years in the open-source domain, Stenberg believes the
+                            future
+                            holds even greater reliance on open-source solutions.
+                        </p>
+                        <img src="images/Curl-logo.png" alt="curl">
+                    </div>
+                </article>
+                <article>
+                    <h3> The Python Packaging Ecosystem – Simple Guidelines for Packaging </h3>
+                    <div class="imageFlex">
+                        <p>
+                            This session focused on turning code into distributable packages:
 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Why do we use it? <br> <br>
+                            Packaging Tools: Key tools include pip and conda for managing Python and non-Python
+                            dependencies.
+                            PEP 517 and 518: These provide the necessary tools for building packages.
+                            PEP 621: Introduces a library for easier package management.
+                            PDM: A modern package manager that simplifies Python package creation.
+                        </p>
+                        <img src="images/package.png" alt="package">
+                    </div>
+                </article>
+                <article>
+                    <h3> Python in Excel: A Big Step for Finance </h3>
+                    <div class="imageFlex">
+                        <p>
+                            Python integration in Excel, introduced in August 2022, marks a significant advancement:
 
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like). <br> <br>
+                            Widespread User Base: With 750 million Excel users and 4-10 million Python users, this
+                            integration
+                            is crucial.
+                            Leveraging Python Skills: Python in Excel allows users to utilize powerful Python libraries
+                            within
+                            Excel, enhancing data analysis and machine learning capabilities.
+                            Challenges and Opportunities: While this integration is still in beta and Windows-only, it
+                            presents
+                            new possibilities for automation and advanced analytics.
+                        </p>
+                        <img src="images/pyExcel.png" alt="pyexcel">
+                    </div>
+                </article>
+                <article>
 
-                    Where does it come from?
+                    <h3> Kivy: Cross-Platform App Development for Pythonistas </h3>
+                    <div class="imageFlex">
+                        <p>
+                            This session highlighted Kivy, an open-source Python library for rapid app development:
 
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.<br> <br>
+                            Cross-Platform Compatibility: Kivy supports deployment across multiple platforms, including
+                            Android
+                            and iOS.
+                            Rich Ecosystem: It includes access to various libraries and tools, making it a robust choice
+                            for
+                            developers looking to build versatile applications.
+                        </p>
+                        <img src="images/Kivy_logo.png" alt="kivy">
+                    </div>
+                </article>
+                <article>
+                    <h3> Keynote: Modern Python through FastAPI and Friends by Sebastián Ramírez </h3>
+                    <div class="imageFlex">
+                        <p>
+                            Sebastián Ramírez introduced FastAPI, a modern web framework for Python:
 
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-                    <br> <br>
-                </p>
-                <p>
+                            Performance: FastAPI offers formatted strings for better performance.
+                            Type Annotations: These help with auto-completion and bug prevention, enhancing development
+                            efficiency.
+                        </p>
+                        <img src="images/fastAPI.png" alt="fastAPI">
+                    </div>
+                </article>
+                <article>
+                    <h3> Personalized LLMs with Hopsworks Feature Store </h3>
+                    <div class="imageFlex">
+                        <p>
+                            This workshop delved into the complexities of personalized language models:
 
-                </p>
+                            Rapid Pace and Complexity: The session covered advanced OpenAI code, posing challenges for
+                            attendees
+                            to keep up.
+                            Practical Applications: Despite the pace, the session showcased practical chatbot
+                            applications,
+                            highlighting the potential of personalized AI.
+                        </p>
+                        <img src="images/llm.jpg" alt="llm">
+                    </div>
+                </article>
+                <article>
+                    <h3> GraphQL as an Umbrella for Microservices </h3>
+                    <div class="imageFlex">
+                        <p>
+                            GraphQL, developed by Facebook, was presented as a powerful tool for microservices:
+
+                            Query Language: GraphQL’s statically typed nature and Python integration through the
+                            Graphene
+                            library were discussed.
+                            Error Handling: Compared to REST APIs, error handling in GraphQL requires more diligence.
+                        </p>
+                        <img src="images/GraphQL_Logo.png" alt="graphQL">
+                    </div>
+                </article>
+                <article>
+                    <h3> Debugging Python </h3>
+                    <div class="imageFlex">
+                        <p>
+                            A session dedicated to enhancing debugging skills: <br> <br>
+
+                            Step-by-Step Guide: Emphasized the importance of understanding the problem before attempting
+                            to
+                            fix
+                            it.
+                            Tools and Techniques: Introduced tools like pdb, ipython, and Birdseye, along with
+                            techniques
+                            like
+                            rubber duck debugging.
+                            Best Practices: Highlighted using print statements and f-strings for effective debugging.
+                        </p>
+                        <img src="images/debugging.jpg" alt="debug">
+                    </div>
+                </article>
+                <article>
+                    <H3> PEP 458: A Solution Not Only for PyPI </H3>
+                    <div class="imageFlex">
+                        <p>
+                            The final session focused on PEP 458, aimed at improving security for Python Package Index
+                            (PyPI)
+                            downloads:
+
+                            Security Concerns: Addressed the potential consequences of compromised artifacts and the
+                            importance
+                            of signing all components.
+                            The Update Framework (TUF): Discussed its role in maintaining project integrity and
+                            consistency.
+                            Language Agnostic: PEP 458’s solutions are not limited to Python, making them versatile for
+                            various
+                            ecosystems.
+                        </p>
+                        <img src="images/pypi.jpg" alt="pypi">
+                    </div>
+                </article>
             </div>
-            <div class="image-container">
-                <img src="images/pycon.jpg" alt="pycon">
-            </div>
-            <div class="rectangle-container">
-                <div class="icon-group">
-                    <div class="icon-container">
-                        <a href="https://www.imperva.com/learn/application-security/honeypot-honeynet/" target="_blank">
-                            <img src="images/honeypot-network-security.jpg" alt="honeypot">
-                        </a>
-                    </div>
-                    <div class="icon-container">
-                        <a href="https://www.php.net/" target="_blank">
-                            <img src="images/php.png" alt="php">
-                        </a>
-                    </div>
-                    <div class="icon-container">
-                        <a href="https://www.ansible.com/" target="_blank">
-                            <img src="images/ansible.png" alt="ansible">
-                        </a>
-                    </div>
-                    <div class="icon-container">
-                        <a href="https://www.elastic.co/elastic-stack" target="_blank">
-                            <img src="images/ELK.png" alt="ELK">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 </main>
-
-
 </body>
 </html>
