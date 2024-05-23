@@ -93,16 +93,30 @@ ul{
     padding-bottom: 1rem;
 }
 
+
 ul a {
     text-decoration: underline;
     color: #e0e0e0;
 
 }
 
-p a {
+nav a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #5588a3;
+}
+
+.imageFlex p a {
     text-decoration: underline;
     color: #e0e0e0;
 }
+
+
 
 .section-container {
     display: flex;
