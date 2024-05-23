@@ -85,6 +85,11 @@ h3 {
     width: 10rem;
 }
 
+ul{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .section-container {
     display: flex;
     flex-direction: column;
