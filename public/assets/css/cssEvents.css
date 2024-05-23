@@ -117,55 +117,6 @@ ul{
     margin-top: 5rem;
 }
 
-.rectangle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #004466;
-    padding: 1rem;
-    border-radius: 20px;
-    position: absolute;
-    bottom: -2rem; /* Negatieve marge om naar beneden te bewegen */
-    width: calc(60% + 25rem); /* Breedte van de tekstcontainer + breedte van de afbeeldingcontainer */
-    margin-bottom: 2rem;
-}
-
-.icon-container {
-    margin: 1rem 0;
-}
-
-.icon-container img {
-    max-width: 3rem;
-    max-height: 3rem;
-    width: auto;
-    height: auto;
-}
-
-
-.icon-group {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.icon-container {
-    margin: 0 1rem;
-}
-
-.icon-container img {
-    max-width: 4rem;
-    max-height: 4rem;
-    width: auto;
-    height: auto;
-}
-
-
-.image-container img {
-    max-width: 25rem;
-    width: 100%;
-    height: auto;
-}
 
 section h2 {
     margin-bottom: 2rem;
